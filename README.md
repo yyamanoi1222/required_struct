@@ -6,16 +6,16 @@ RequiredStruct Creates a Struct that enforces the specified keyword at initializ
 
 Install the gem and add to the application's Gemfile by executing:
 
-    $ bundle add strict_struct
+    $ bundle add required_struct
 
 If bundler is not being used to manage dependencies, install the gem by executing:
 
-    $ gem install strict_struct
+    $ gem install required_struct
 
 ## Usage
 
 ```ruby
-require 'strict_struct'
+require 'required_struct'
 
 dog = RequiredStruct.new("Dog", :name, :age)
 fred = dog.new(name: "fred", age: 5)
